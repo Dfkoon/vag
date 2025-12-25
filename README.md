@@ -50,6 +50,20 @@ python app.py
 ```
 The application will automatically launch in your browser at `http://127.0.0.1:5001`.
 
+## 🌐 Deployment (Live Website)
+
+### Using Render (Recommended)
+This project is configured for easy deployment on [Render](https://render.com).
+
+1. **Push code to GitHub**.
+2. **Sign up on Render** and create a **New Web Service**.
+3. **Connect your GitHub repository**.
+4. **Settings**:
+   - Runtime: **Python 3**
+   - Build Command: `pip install -r requirements.txt`
+   - Start Command: `gunicorn app:app`
+5. Click **Create Web Service**. 🚀
+
 ## 🛡️ Security Features
 - **File Validation**: Strict checking for allowed image types (JPG, PNG, TIFF, etc.).
 - **Size Limit**: Supports high-resolution images up to **50 MB**.
